@@ -1,0 +1,907 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 5.10.0-26-amd64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+ls
+# dec_counter.vhd
+# modelsim.ini
+# relogio_xadrez.vhd
+# sim.do
+# sim_temp.do
+# tb_temp.vhd
+# tb.vhd
+# temporizador.vhd
+# transcript
+# vsim.wlf
+# wave.do
+# wave_temp.do
+# work
+do sim_temp.do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:39:52 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:39:52 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:39:52 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:39:52 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:39:52 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb_temp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading entity temporizador
+# End time: 15:39:53 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:39:53 on Nov 07,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:40:05 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:40:05 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:40:05 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:40:06 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:40:06 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# ** Error: relogio_xadrez.vhd(119): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: relogio_xadrez.vhd(124): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: relogio_xadrez.vhd(128): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: relogio_xadrez.vhd(132): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: relogio_xadrez.vhd(134): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: relogio_xadrez.vhd(137): VHDL Compiler exiting
+# End time: 15:40:06 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 7
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work relogio_xadrez.vhd"
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:40:59 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:40:59 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:40:59 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:40:59 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:40:59 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# ** Error: relogio_xadrez.vhd(121): Illegal target for signal assignment.
+# ** Error: relogio_xadrez.vhd(121): Target type states in signal assignment is different from expression type.
+# ** Error: relogio_xadrez.vhd(121): Target of signal assignment is not a signal.
+# ** Error: relogio_xadrez.vhd(122): Illegal target for signal assignment.
+# ** Error: relogio_xadrez.vhd(122): Target type states in signal assignment is different from expression type.
+# ** Error: relogio_xadrez.vhd(122): Target of signal assignment is not a signal.
+# ** Error: relogio_xadrez.vhd(126): near ",": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: relogio_xadrez.vhd(130): near ",": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: relogio_xadrez.vhd(137): VHDL Compiler exiting
+# End time: 15:40:59 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 7
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work relogio_xadrez.vhd"
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:41:48 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:41:48 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:41:48 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:41:48 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:41:48 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 15:41:49 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:41:49 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 15:41:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:41:49 on Nov 07,2023, Elapsed time: 0:01:56
+# Errors: 2, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:41:49 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# ** Warning: (vsim-8683) Uninitialized out port /tb/UUT/contj1(15 downto 0) has no driver.
+# This port will contribute value (16'hXXXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb/UUT/contj2(15 downto 0) has no driver.
+# This port will contribute value (16'hXXXX) to the signal network.
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:45:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:45:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:45:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:45:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:45:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 15:45:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:45:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 15:45:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:45:32 on Nov 07,2023, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:45:32 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim_temp.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:46:49 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:46:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:46:49 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:46:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:46:49 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb_temp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading entity temporizador
+# End time: 15:46:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:46:50 on Nov 07,2023, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:46:50 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:43 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:50:43 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:43 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:50:43 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:43 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 15:50:43 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:43 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 15:50:44 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:50:44 on Nov 07,2023, Elapsed time: 0:03:54
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:50:44 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim_temp.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:55:34 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:55:35 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:55:35 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:55:35 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:55:35 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb_temp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading entity temporizador
+# End time: 15:55:35 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:55:36 on Nov 07,2023, Elapsed time: 0:04:52
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:55:36 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:57:47 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 15:57:47 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:57:47 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 15:57:47 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:57:47 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 15:57:47 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:57:47 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 15:57:47 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:57:48 on Nov 07,2023, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 15:57:48 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:00:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 16:00:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:00:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 16:00:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:00:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 16:00:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:00:31 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 16:00:31 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:00:32 on Nov 07,2023, Elapsed time: 0:02:44
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 16:00:32 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:19 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 16:02:20 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:20 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 16:02:20 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:20 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 16:02:20 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:20 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 16:02:20 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:02:21 on Nov 07,2023, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 16:02:21 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:44 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 16:08:44 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:44 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 16:08:44 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:44 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 16:08:44 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:44 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 16:08:44 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:08:45 on Nov 07,2023, Elapsed time: 0:06:24
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 16:08:45 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1
+do sim.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is a.mazot@LINUX-EP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:11:50 on Nov 07,2023
+# vcom -reportprogress 300 -work work dec_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity dec_counter
+# -- Compiling architecture a1 of dec_counter
+# End time: 16:11:50 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:11:50 on Nov 07,2023
+# vcom -reportprogress 300 -work work temporizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity temporizador
+# -- Compiling architecture a1 of temporizador
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity dec_counter
+# End time: 16:11:50 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:11:50 on Nov 07,2023
+# vcom -reportprogress 300 -work work relogio_xadrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogio_xadrez
+# -- Compiling architecture relogio_xadrez of relogio_xadrez
+# -- Loading entity temporizador
+# End time: 16:11:51 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:11:51 on Nov 07,2023
+# vcom -reportprogress 300 -work work tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb
+# -- Compiling architecture arch of tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity relogio_xadrez
+# End time: 16:11:51 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:11:51 on Nov 07,2023, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.tb 
+# Start time: 16:11:51 on Nov 07,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb(arch)#1
+# Loading work.relogio_xadrez(relogio_xadrez)#1
+# Loading work.temporizador(a1)#1
+# Loading work.dec_counter(a1)#1
+# 1
+# 1

@@ -1,0 +1,211 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/a.mazot/Documents/Material_IA3
+T_opt
+!s110 1699384312
+VMnBd<U_O@B^g:9dii^f;k0
+04 2 4 work tb arch 1
+=1-000ae431a4f1-654a8bf8-577f-17f8
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc=lprn
+tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+Edec_counter
+Z2 w1699380513
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z7 8dec_counter.vhd
+Z8 Fdec_counter.vhd
+l0
+L10 1
+VXj3jag?FTn<ggMS<T@NVb0
+!s100 Z;XM:oFO=_lKU:P9`UiXP1
+Z9 OL;C;2021.3;73
+32
+Z10 !s110 1699384310
+!i10b 1
+Z11 !s108 1699384310.000000
+Z12 !s90 -reportprogress|300|-work|work|dec_counter.vhd|
+Z13 !s107 dec_counter.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Aa1
+R3
+R4
+R5
+R6
+Z16 DEx4 work 11 dec_counter 0 22 Xj3jag?FTn<ggMS<T@NVb0
+!i122 0
+l20
+L18 26
+VhPRg6fH@nCX]6SL?;`;P02
+!s100 7IaV?kdSE_nnmEAhC;T951
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Erelogio_xadrez
+Z17 w1699384301
+R3
+R4
+R5
+R6
+!i122 2
+R1
+Z18 8relogio_xadrez.vhd
+Z19 Frelogio_xadrez.vhd
+l0
+L12 1
+V4mOSn2onEW^1^@7G@JDF:3
+!s100 8[9bTklJfijiK^InZkXAV0
+R9
+32
+Z20 !s110 1699384311
+!i10b 1
+R11
+Z21 !s90 -reportprogress|300|-work|work|relogio_xadrez.vhd|
+Z22 !s107 relogio_xadrez.vhd|
+!i113 0
+R14
+R15
+Arelogio_xadrez
+Z23 DEx4 work 12 temporizador 0 22 RAo^`=co7081lb^c6N1N`2
+R3
+R4
+R5
+R6
+Z24 DEx4 work 14 relogio_xadrez 0 22 4mOSn2onEW^1^@7G@JDF:3
+!i122 2
+l42
+L26 121
+V<W6Vlfk<8b]d3R;<A:@Ji1
+!s100 9aA_2H][@ZJeMk[?8Qn@B1
+R9
+32
+R20
+!i10b 1
+R11
+R21
+R22
+!i113 0
+R14
+R15
+Etb
+R2
+R5
+R6
+!i122 3
+R1
+Z25 8tb.vhd
+Z26 Ftb.vhd
+l0
+L8 1
+Vb2LRd]ZQUK=bOblDCj<UO3
+!s100 6B0?>PJSLBVdT9C^]@aPk3
+R9
+32
+R20
+!i10b 1
+Z27 !s108 1699384311.000000
+Z28 !s90 -reportprogress|300|-work|work|tb.vhd|
+Z29 !s107 tb.vhd|
+!i113 0
+R14
+R15
+Aarch
+R3
+R4
+R24
+R5
+R6
+DEx4 work 2 tb 0 22 b2LRd]ZQUK=bOblDCj<UO3
+!i122 3
+l42
+L11 74
+VDJ1oHhAhUOZ>1H[nQ[NS20
+!s100 <<4D6^Ik8RhSOYC^>><3f2
+R9
+32
+R20
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R14
+R15
+Etemporizador
+Z30 w1699380985
+R5
+R6
+!i122 1
+R1
+Z31 8temporizador.vhd
+Z32 Ftemporizador.vhd
+l0
+L9 1
+VRAo^`=co7081lb^c6N1N`2
+!s100 WA]WSLHS]S?7kdkFi`YX`2
+R9
+32
+R10
+!i10b 1
+R11
+Z33 !s90 -reportprogress|300|-work|work|temporizador.vhd|
+Z34 !s107 temporizador.vhd|
+!i113 0
+R14
+R15
+Aa1
+R3
+R4
+R16
+R5
+R6
+R23
+!i122 1
+l22
+L17 65
+VOcF[4A^[=A;J@0>kneeVY2
+!s100 8eDlQ6d:M]VT__=zjCeBI1
+R9
+32
+R10
+!i10b 1
+R11
+R33
+R34
+!i113 0
+R14
+R15
